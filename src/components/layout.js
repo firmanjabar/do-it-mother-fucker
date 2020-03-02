@@ -27,15 +27,23 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
+        className="layout"
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0 auto`,
         }}
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          <br></br>
+          <br></br>
+          <blockquote>
+            This is my version of the legendary DO IT MOTHERFUCKER DOT COM, I
+            just knew this site from{" "}
+            <a href="https://resir014.github.io/doitmotherfucker/">resir014</a>
+          </blockquote>
+          <br></br>© {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>

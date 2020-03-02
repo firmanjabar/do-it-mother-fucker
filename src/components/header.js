@@ -4,9 +4,10 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
+    className="c-header"
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `#000`,
+      marginBottom: `1rem`,
     }}
   >
     <div
@@ -16,7 +17,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h3 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -26,7 +27,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h3>
     </div>
   </header>
 )
